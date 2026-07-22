@@ -574,10 +574,6 @@ mysteryBox.addEventListener('keydown', (e) => {
   let isPlaying = false;
   let progressTimer = null;
 
-  function clamp(v, min, max) {
-    return Math.max(min, Math.min(max, v));
-  }
-
   function setNowPlaying(index) {
     currentIndex = (index + playlist.length) % playlist.length;
     const track = playlist[currentIndex];
