@@ -1,0 +1,15 @@
+# System files
+Thumbs.db
+.DS_Store
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# No node_modules or build artifacts
+node_modules/
+dist/
+
