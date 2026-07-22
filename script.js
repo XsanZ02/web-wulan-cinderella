@@ -727,21 +727,3 @@ mysteryBox.addEventListener('keydown', (e) => {
     }
   });
 })();
-
-
-// Ensure body doesn't get hidden behind fixed music player on small screens (fallback)
-(function(){
-  const root = document.documentElement;
-  if (!root) return;
-  const applyPad = () => {
-    if (window.matchMedia('(max-width:820px)').matches) {
-      document.body.style.paddingBottom = '96px';
-    } else {
-      document.body.style.paddingBottom = '86px';
-    }
-  };
-  window.addEventListener('resize', applyPad);
-  applyPad();
-})();
-
-
